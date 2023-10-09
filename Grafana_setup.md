@@ -4,7 +4,7 @@ To display Grafana, go to the following URL:
 
 The needed credentials (at least for rasp03 where tests have been conducted) is:
 
-``
+```
 username = 'admin'
 password = 'password'
 ```
