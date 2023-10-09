@@ -29,3 +29,19 @@ Scroll down and click "Add query" to add query "B".
 Select "select measurement" and set it to power_info"
 Select "field(value)" and set it to "power_out"
 
+Note: I entered the following data points into my energy database:
+``` 
+1696862040408915862 145      568       motor1
+1696866923096249602 145      568       motor1
+1696866931209139817 135      523       motor1
+1696866958507029333 146      570       motor1
+1696866970652751866 102      500       motor1
+1696866987873066167 195      592       motor1
+```
+
+Your dashboard setup window should now look like this if you entered the same data points in:
+[Dashboard setup](Screenshot 2023-10-09 105827.png)
+
+You can then click "Apply" in the upper right-hand corner to save this dashboard panel. 
+
+Now as data points are entered into the InfluxDB database named 'energy', they will appear here as often as the database in queried. You can adjust querying rates, dashboard data types, and format the display to preference.
