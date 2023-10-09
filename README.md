@@ -2,8 +2,9 @@ This file will go over everything needed to install the influxDB process on a Ra
 
 1. To install InfluxDB, the InfluxDB CLI client, and the InfluxDB Python library, run the following command:
 
+```
 sudo apt install influxdb influxdb-client python3-influxdb
-
+```
 2. To start the InfluxDB service and enable it to start at boot, run the following commands:
 
 sudo systemctl start influxdb
