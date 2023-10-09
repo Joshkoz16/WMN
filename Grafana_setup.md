@@ -40,7 +40,7 @@ Note: I entered the following data points into my energy database:
 ```
 
 Your dashboard setup window should now look like this if you entered the same data points in:
-[Dashboard setup](Screenshot 2023-10-09 105827.png)
+[Dashboard setup](https://github.com/Joshkoz16/WMN/blob/f784ca1c202d662292238f58f00196dda0f8c4a6/Screenshot%202023-10-09%20105827.png)
 
 You can then click "Apply" in the upper right-hand corner to save this dashboard panel. 
 
