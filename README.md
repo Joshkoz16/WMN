@@ -217,4 +217,6 @@ SHOW measurements
 To show different tag keys inside the InfluxDB database:  
 ```
 SHOW tag keys
-```  
+```
+
+
