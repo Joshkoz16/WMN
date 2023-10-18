@@ -208,7 +208,17 @@ password = password
 1696866958507029333 146      570       motor1
 1696866970652751866 102      500       motor1
 1696866987873066167 195      592       motor1
-```  
+```
+You can enter these datapoints yourself with the following commands:  
+```
+INSERT power_info,sensor=motor1 power_in=145,power_out=568
+INSERT power_info,sensor=motor1 power_in=145,power_out=568
+INSERT power_info,sensor=motor1 power_in=135,power_out=523
+INSERT power_info,sensor=motor1 power_in=146,power_out=570
+INSERT power_info,sensor=motor1 power_in=102,power_out=500
+INSERT power_info,sensor=motor1 power_in=195,power_out=592
+```
+
 Your dashboard setup window should now look like this if you entered the same data points in:  
 ![Dashboard setup](https://github.com/Joshkoz16/WMN/blob/f784ca1c202d662292238f58f00196dda0f8c4a6/Screenshot%202023-10-09%20105827.png)
 
