@@ -200,7 +200,7 @@ password = password
 * Choose the folder you wish to save the dashboard into and click "save"
 * Grafana will save the dashboard and take you to the dashboard home page where your new panel will be displayed.
 
-*Note: I entered the following data points into my energy database through the Influx UI:*  
+*Note: I entered the following additional data points into my energy database through the Influx UI:*  
 ``` 
 1696862040408915862 145      568       motor1
 1696866923096249602 145      568       motor1
@@ -217,6 +217,20 @@ INSERT power_info,sensor=motor1 power_in=135,power_out=523
 INSERT power_info,sensor=motor1 power_in=146,power_out=570
 INSERT power_info,sensor=motor1 power_in=102,power_out=500
 INSERT power_info,sensor=motor1 power_in=195,power_out=592
+```
+If you type the following command:  
+```
+select * from power_info
+```
+You should now see the following data in your database:  
+```
+1697639303904942864 145      568       motor1
+1697641732676634432 145      568       motor1
+1697641732687244288 145      568       motor1
+1697641732701039922 135      523       motor1
+1697641732711470503 146      570       motor1
+1697641732723807191 102      500       motor1
+1697641733856462233 195      592       motor1
 ```
 
 Your dashboard setup window should now look like this if you entered the same data points in:  
