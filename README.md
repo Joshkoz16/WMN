@@ -71,7 +71,7 @@ time                power_in power_out sensor
 ----                -------- --------- ------
 1696862040408915862 145      568       motor1
 ```  
-In this case, we did not specify a timestamp and InfluxDB automatically assigns one at the time it is entered into the database.  
+*Note: In this case, we did not specify a timestamp and InfluxDB automatically assigns one at the time it is entered into the database. For this project, the automatically assigned time stamp is the one that has been used. If a different timestamp is needed, InfluxDB has documentation on their website on the format the timestamp needs to be in.  
 Now we have Influx DB installed on our Raspberry Pi, a local database created, authentication enabled, and verified that data can be written into the database.  
 
 ## Add a script to run iPerf3 command and write output to InfluxDB database:  
