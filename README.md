@@ -304,6 +304,8 @@ drop database <database name>
 
 ## Go from powered off Pi to data collection:
 
+***Note: This example used rasp3 as the client Pi and rasp2 as the server Pi. The following steps can be adapted for using rasp as the client Pi and rasp2 as the server Pi by substituting rasp for rasp3.***  
+
 Power on Raspberry Pis named rasp2 and rasp3. For the purposes of this demonstration, rasp2 is the server Pi and rasp3 is the client Pi.  
 Open a Terminal window on rasp2 and start the iPerf server with the command:
 ```
