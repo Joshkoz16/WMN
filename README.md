@@ -174,11 +174,16 @@ To display Grafana, go to the following URL:
 ```
 10.106.92.144:3000  // The IP address will be the address of the pi you have set up the script on. You can also enter 'localhost:3000'
 ```
-The needed credentials (at least for rasp03 where tests have been conducted) is:  
+By default, the user credentials are:  
 ```
-username = 'admin'
-password = 'password'
-```  
+username = admin
+password = admin
+```
+When entered, Grafana will prompt you to update your password. For consistency, the following credentials have been used on all pis:
+```
+username = admin
+password = password
+```
 * To add a new connection, click on the menu on the left-hand side of the screen and click "Connections" then "Add new connection"  
 * Scroll down and select "InfluxDB" and click on "Add new data source" in the upper right-hand corner  
 * Give your new database a name (in my case, "InfluxDB-1"). Enter the URL (http://localhost:8086), enable Basic auth and enter the InfluxDB username and password credentials (in my case, "admin" and "password"), as well as the database name (in my case, "energy") and the database's username and password (in my case, "admin" and "password")  
