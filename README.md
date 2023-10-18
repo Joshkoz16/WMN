@@ -234,6 +234,14 @@ To show different tag keys inside the InfluxDB database:
 ```
 SHOW tag keys
 ```
+To select a database to use:  
+```
+use <database name>
+```
+To delete a database, run the 'use' command to go in the database and then run:  
+```
+drop database <database name>
+```
 
 ## Go from powered off Pi to data collection:
 
