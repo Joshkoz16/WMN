@@ -194,10 +194,10 @@ Password: **password**
 influx -username energyuser -password password
 ```
 
-**Grafana user credentials**
-URL: **10.106.92.144**
-Username: **admin**
-Password: **password**
+**Grafana user credentials**  
+URL: **10.106.92.144**  
+Username: **admin**  
+Password: **password**  
 
 Inside the InfluxDB database, here are some of the commands that can be used:  
 
