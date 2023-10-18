@@ -284,4 +284,4 @@ Accepted connection from 10.106.92.144, port 39628
 [  5]   1.00-2.00   sec  0.00 Bytes  0.00 bits/sec
 ```
 Open up the Grafana dashboard you set up previously and if you have the graph properly set up you should see data being recorded in live time like this:  
-![Dashboard setup](https://github.com/Joshkoz16/WMN/blob/f784ca1c202d662292238f58f00196dda0f8c4a6/Screenshot%202023-10-09%20105827.png)
+![Dashboard setup]([https://github.com/Joshkoz16/WMN/blob/main/iperf3%20ping%20updating%20example.png)
