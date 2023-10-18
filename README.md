@@ -65,7 +65,7 @@ For example, if our measurement is 'power_info', the tag is 'sensor' and its val
 ```
 power_info,sensor=motor1 power_in=145,power_out=568
 ```  
-To open the InfluxDB UI as 'energyuser', open the 'energy' database', and write the above data point, run the following commands:  
+To open the InfluxDB UI as 'energyuser', open the 'energy' database', and write the above data point, run the following commands one at a time:  
 ```
 influx -username energyuser -password password
 USE energy
