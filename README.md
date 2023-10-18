@@ -141,6 +141,35 @@ Save the script to the Raspberry Pi and allow it to be run as an executable with
 sudo chmod +x datascript
 ```  
 ## Set up Grafana to query InfluxDB for data and display on Grafana:  
+
+Set up the apt-key used to authenticate packages:  
+```
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+```
+Add the Grafana apt repository:  
+```
+echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/g
+rafana.list
+```
+Then install Grafana with the following commands:
+```
+sudo apt-get update
+sudo apt-get install -y grafana
+```
+Execute the following commands to configure Grfana to start automatically:  
+```
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable grafana-server
+```
+You can also start Grafana with the following command:  
+```
+sudo /bin/systemctl start grafana-server
+```
+To check if Grafana is running, enter the following command:  
+```
+sudo lsof -i -n
+```
+You should see the command 'grafana' running.  
 To display Grafana, go to the following URL:  
 ```
 10.106.92.144:3000  // The IP address will be the address of the pi you have set up the script on. You can also enter 'localhost:3000'
