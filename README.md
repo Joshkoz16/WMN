@@ -194,6 +194,11 @@ Password: **password**
 influx -username energyuser -password password
 ```
 
+**Grafana user credentials**
+URL: **10.106.92.144**
+Username: **admin**
+Password: **password**
+
 Inside the InfluxDB database, here are some of the commands that can be used:  
 
 To show all databases (must be authenticated in as admin):  
@@ -229,7 +234,7 @@ iperf3 -s
 If you get an error stating, "error - unable to start listener for connections: Address already in use", this is becuase iperf3 is started at boot. You can stop iperf3 with the following steps.  
 To see all commands running on the pi:  
 ```
-sudo lsof -i -n  // this will show all commands running on the pi
+sudo lsof -i -n
 ```
 Look for 'iperf3' and note its PID number (the second column). Then run the command:  
 ```
