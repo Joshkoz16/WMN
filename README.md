@@ -233,8 +233,8 @@ You should now see the following data in your database:
 1697641733856462233 195      592       motor1
 ```
 
-Your dashboard setup window should now look like this if you entered the same data points in:  
-![Dashboard setup](https://github.com/Joshkoz16/WMN/blob/f784ca1c202d662292238f58f00196dda0f8c4a6/Screenshot%202023-10-09%20105827.png)
+Your dashboard setup window should now look like this if you entered the same data points in (*Note: you may have to click on the refresh icon in the upper right-hand corner*:  
+![Dashboard setup](https://github.com/Joshkoz16/WMN/blob/main/energy%20database%20test.png)
 
 You can then click "Apply" in the upper right-hand corner to save this dashboard panel  
 
