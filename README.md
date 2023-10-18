@@ -173,15 +173,15 @@ Here is a list of all the needed information to use this instance:
 **InfluxDB admin credentials:**  
 Username: **admin**  
 Password: **password**  
-*Note:* to start InfluxDB, type the following command:  
+*Note: to start InfluxDB, type the following command:*  
 ```
 influx -username admin -password password
 ```
 
 **InfluxDB user credentials:**  
-Username: rasp03  
-Password: password  
-*Note:* this user is assigned to the rasp03wmn database; the primary database used when testing this instance  
+Username: **rasp03**  
+Password: **password**  
+*Note: this user is assigned to the rasp03wmn database; the primary database used when testing this instance*  
 ```
 influx -username rasp03 -password password
 ```
@@ -189,13 +189,13 @@ influx -username rasp03 -password password
 **InfluxDB user credentials:**  
 Username: **energyuser**  
 Password: **password**  
-*Note:* this user is assigned to the energy database; the database used when testing if InfluxDB was properly installed and configured  
+*Note: this user is assigned to the energy database; the database used when testing if InfluxDB was properly installed and configured*  
 ```
 influx -username energyuser -password password
 ```
 
-**Grafana user credentials**  
-URL: **10.106.92.144**  
+**Grafana user credentials:**  
+URL: **10.106.02.144:3000**
 Username: **admin**  
 Password: **password**  
 
