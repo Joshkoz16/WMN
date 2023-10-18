@@ -138,7 +138,7 @@ iperf Done.
 The script takes the '59.6' from the 7th line, removes the rest of the text, and saves the value to the database.  
 Save the script to the Raspberry Pi and allow it to be run as an executable with the following command:  
 ```
-chmod +x datascript
+sudo chmod +x datascript
 ```  
 ## Set up Grafana to query InfluxDB for data and display on Grafana:  
 To display Grafana, go to the following URL:  
