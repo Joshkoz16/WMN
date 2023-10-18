@@ -51,7 +51,7 @@ name
 _internal
 energy
 ```
-At this point, databases can only be accessed with the admin user. To create a dedicated user with R/W access limited to this database run the following command:  
+At this point, databases can only be accessed with the admin user. To create a dedicated user with R/W access limited to this database enter the following commands one at a time:  
 ```
 CREATE USER 'energyuser' WITH PASSWORD 'password'
 GRANT ALL ON energy to energyuser
