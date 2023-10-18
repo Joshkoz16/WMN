@@ -21,7 +21,7 @@ InfluxDB shell version: 1.6.7~rc0
 ```  
 To create an admin user authentication into all databases, run the following command in the InfluxDB UI. (In this case, the username is 'admin' and the password is 'password'):  
 ```
-CREATE USER 'admin' WITH PASSWORD 'password' WITH ALL PRIVILEGES
+CREATE USER admin WITH PASSWORD 'password' WITH ALL PRIVILEGES
 ```  
 To enable authentication in the config file, exit the InfluxDB UI with the command 'quit' and then run the following command:  
 ```
