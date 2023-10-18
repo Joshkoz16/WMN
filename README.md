@@ -219,4 +219,62 @@ To show different tag keys inside the InfluxDB database:
 SHOW tag keys
 ```
 
+## Go from powered off Pi to data collection:
 
+Power on Raspberry Pis named rasp2 and rasp3. For the purposes of this demonstration, rasp2 is the server Pi and rasp3 is the client Pi.  
+Open a Terminal window on rasp2 and start the iPerf server with the command:
+```
+iperf3 -s
+```
+If you get an error stating, "error - unable to start listener for connections: Address already in use", this is becuase iperf3 is started at boot. You can stop iperf3 with the following steps.  
+To see all commands running on the pi:  
+```
+sudo lsof -i -n  // this will show all commands running on the pi
+```
+Look for 'iperf3' and note its PID number (the second column). Then run the command:  
+```
+sudo kill -9 <insert PID number here>
+```
+Then, reenter the 'lsof' command to double check that iperf3 has been killed.  
+Now you can reenter the 'iperf3 -s' command to start the server on rasp2. You should see the following output:  
+```
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+```
+On rasp3, open a Terminal window and enter the command:
+```
+ls
+```
+This will list all files and folders in the current directory /home/rasp3. Look for 'datascript' and enter this command to run the script:  
+```
+./datascript
+```
+You should begin to see the script's output in the rasp3 terminal window in the following format:  
+```
+['[  5]   0.00-1.00   sec  7.60 MBytes  63.7 Mbits/sec    0             sender', '[  5]   0.00-1.07   sec  6.46 MBytes  50.7 Mbits/sec                  receiver']
+Bitrate: 63.7
+Bitrate: 50.7
+['[  5]   0.00-1.00   sec  7.38 MBytes  61.9 Mbits/sec    0             sender', '[  5]   0.00-1.08   sec  6.80 MBytes  52.8 Mbits/sec                  receiver']
+Bitrate: 61.9
+Bitrate: 52.8
+```
+On the rasp2 Terminal window, you should begin to see an output in the following format:  
+```
+Accepted connection from 10.106.92.144, port 39618
+[  5] local 10.106.94.202 port 5201 connected to 10.106.92.144 port 39626
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  6.25 MBytes  52.4 Mbits/sec                  
+[  5]   1.00-1.08   sec   566 KBytes  58.2 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.08   sec  6.80 MBytes  52.8 Mbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+Accepted connection from 10.106.92.144, port 39628
+[  5] local 10.106.94.202 port 5201 connected to 10.106.92.144 port 39636
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  3.11 MBytes  26.1 Mbits/sec                  
+[  5]   1.00-2.00   sec  0.00 Bytes  0.00 bits/sec
+```
