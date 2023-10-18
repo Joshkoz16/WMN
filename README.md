@@ -121,8 +121,8 @@ while True:
 client.close()
 ```
 
-Note: This script 'datascript03' accesses a local database 'rasp03wmn' with username 'admin' and password 'password'. Edit the script as necessary for your setup.
-Note: This script runs the iPerf3 tool for 1 second before ending it and sending the output to the database. This is what iPerf outputs:  
+*Note: This script 'datascript03' accesses a local database 'rasp03wmn' with username 'admin' and password 'password'. Edit the script as necessary for your setup.*  
+*Note: This script runs the iPerf3 tool for 1 second before ending it and sending the output to the database. This is what the iPerf output will look like:*  
 ```
 Connecting to host 10.106.94.250, port 5201
 [  5] local 10.106.92.144 port 39908 connected to 10.106.94.250 port 5201
