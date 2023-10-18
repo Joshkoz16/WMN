@@ -100,7 +100,7 @@ client = InfluxDBClient(host='localhost',
                         username='admin',
                         password='password')
 
-iperf_command = ['iperf3', '-c', '10.106.94.250', '-t', '1']  # set iperf3 parameters without a specific duration
+iperf_command = ['iperf3', '-c', '10.106.94.202', '-t', '1']  # set iperf3 parameters without a specific duration
 
 # run indefinitely or until user stops. 
 while True:
@@ -121,7 +121,7 @@ while True:
 client.close()
 ```
 
-*Note: This script 'datascript03' accesses a local database 'rasp03wmn' with username 'admin' and password 'password'. Edit the script as necessary for your setup.*  
+*Note: This script 'datascript' accesses a local database 'rasp03wmn' with username 'admin' and password 'password'. Edit the script as necessary for your setup.*  
 *Note: This script runs the iPerf3 tool for 1 second before ending it and sending the output to the database. This is what the iPerf output will look like:*  
 ```
 Connecting to host 10.106.94.250, port 5201
@@ -138,7 +138,7 @@ iperf Done.
 The script takes the '59.6' from the 7th line, removes the rest of the text, and saves the value to the database.  
 Save the script to the Raspberry Pi and allow it to be run as an executable with the following command:  
 ```
-chmod +x datascript03
+chmod +x datascript
 ```  
 ## Set up Grafana to query InfluxDB for data and display on Grafana:  
 To display Grafana, go to the following URL:  
