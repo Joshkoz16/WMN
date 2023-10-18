@@ -139,7 +139,18 @@ The script takes the '59.6' from the 7th line, removes the rest of the text, and
 Save the script to the Raspberry Pi and allow it to be run as an executable with the following command:  
 ```
 sudo chmod +x datascript
-```  
+```
+## Install iPerf3:
+
+To install iPerf3, run the following command:  
+```
+sudo apt install iperf3
+```
+To verify it's installed, run the following command to display its version:  
+```
+iperf3 -v
+```
+
 ## Set up Grafana to query InfluxDB for data and display on Grafana:  
 
 Set up the apt-key used to authenticate packages:  
