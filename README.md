@@ -190,14 +190,17 @@ password = password
 * Set HTTP Method to "GET"  
 * Click "Save & test" and you should receive the output "datasource is working. 1 measurement found"  
 * Return to the left-hand menu and select "Dashboards", we can select "New" then "New dashboard" and choose our display method. Here, we will choose "Add visualization"  
-* Select the name of the database that was just linked. Underneath the "Panel Title" box will be a collection of options for query "A"  
-* Select "select measurement" and set it to "power_info"  
-* Select "field(value)" and set it to "power_in"  
+* Select the name of the database that was just linked (in this case, "InfluxDB-1"). Underneath the "Panel Title" box will be a collection of options for query "A"  
+* Click "select measurement" and set it to "power_info"  
+* Click "field(value)" and set it to "power_in"  
 * Scroll down and click "Add query" to add query "B"  
-* Select "select measurement" and set it to power_info"  
-* Select "field(value)" and set it to "power_out"  
+* Click "select measurement" and set it to power_info"  
+* Click "field(value)" and set it to "power_out"
+* Click "Save" in the upper right-hand corver and save the Dashboard name as "raspwmntest". *Note: if on rasp04, for example, save the dashboard as "rasp04test")*
+* Choose the folder you wish to save the dashboard into and click "save"
+* Grafana will save the dashboard and take you to the dashboard home page where your new panel will be displayed.
 
-Note: I entered the following data points into my energy database through the Influx UI:  
+*Note: I entered the following data points into my energy database through the Influx UI:*  
 ``` 
 1696862040408915862 145      568       motor1
 1696866923096249602 145      568       motor1
