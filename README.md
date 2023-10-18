@@ -143,7 +143,7 @@ sudo chmod +x datascript
 ## Set up Grafana to query InfluxDB for data and display on Grafana:  
 To display Grafana, go to the following URL:  
 ```
-10.106.92.144:3000
+10.106.92.144:3000  // The IP address will be the address of the pi you have set up the script on
 ```
 The needed credentials (at least for rasp03 where tests have been conducted) is:  
 ```
