@@ -347,31 +347,26 @@ This will list all files and folders in the current directory /home/rasp3. Look 
 ```
 You should begin to see the script's output in the rasp3 terminal window in the following format:  
 ```
-['[  5]   0.00-1.00   sec  7.60 MBytes  63.7 Mbits/sec    0             sender', '[  5]   0.00-1.07   sec  6.46 MBytes  50.7 Mbits/sec                  receiver']
-Bitrate: 63.7
-Bitrate: 50.7
-['[  5]   0.00-1.00   sec  7.38 MBytes  61.9 Mbits/sec    0             sender', '[  5]   0.00-1.08   sec  6.80 MBytes  52.8 Mbits/sec                  receiver']
-Bitrate: 61.9
-Bitrate: 52.8
+Bitrate: xx.x
+Bitrate: xx.x
+Bitrate: xx.x
+Bitrate: xx.x
+Bitrate: xx.x
 ```
-On the rasp2 Terminal window, you should begin to see an output in the following format:  
+On the rasp2 Terminal window, you should begin to see an output in the following format repeated:  
 ```
-Accepted connection from 10.106.92.144, port 39618
-[  5] local 10.106.94.202 port 5201 connected to 10.106.92.144 port 39626
-[ ID] Interval           Transfer     Bitrate
-[  5]   0.00-1.00   sec  6.25 MBytes  52.4 Mbits/sec                  
-[  5]   1.00-1.08   sec   566 KBytes  58.2 Mbits/sec                  
-- - - - - - - - - - - - - - - - - - - - - - - - -
-[ ID] Interval           Transfer     Bitrate
-[  5]   0.00-1.08   sec  6.80 MBytes  52.8 Mbits/sec                  receiver
 -----------------------------------------------------------
 Server listening on 5201
 -----------------------------------------------------------
-Accepted connection from 10.106.92.144, port 39628
-[  5] local 10.106.94.202 port 5201 connected to 10.106.92.144 port 39636
+Accepted connection from 10.106.92.91, port 34488
+[  5] local 10.106.94.202 port 5201 connected to 10.106.92.91 port 34494
 [ ID] Interval           Transfer     Bitrate
-[  5]   0.00-1.00   sec  3.11 MBytes  26.1 Mbits/sec                  
-[  5]   1.00-2.00   sec  0.00 Bytes  0.00 bits/sec
+[  5]   0.00-1.00   sec  1.18 MBytes  9.90 Mbits/sec                  
+[  5]   1.00-1.11   sec   105 KBytes  8.01 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.11   sec  1.28 MBytes  9.72 Mbits/sec                  receiver
+
 ```
 Open up the Grafana dashboard you set up previously and if you have the graph properly set up you should see data being recorded in live time like this:  
 ![Dashboard setup](https://github.com/Joshkoz16/WMN/blob/main/iperf3%20ping%20updating%20example.png)
