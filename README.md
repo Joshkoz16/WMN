@@ -7,7 +7,7 @@ To install InfluxDB, the InfluxDB CLI client, and the InfluxDB Python library, r
 ```
 sudo apt install influxdb influxdb-client python3-influxdb
 ```  
-To start the InfluxDB service, enable it to start at boot, and open the influx UI, run the following commands:  
+To start the InfluxDB service, enable it to start at boot, and open the influx UI, run the following commands one at a time:  
 ```
 sudo systemctl start influxdb
 sudo systemctl enable influxdb
@@ -38,8 +38,19 @@ influx -username admin -password password
 To create a database inside the InfluxDB UI and show all current databses, run the following commands. (In this case, the database name is 'energy'):  
 ```
 CREATE DATABASE energy
+```
+To confirm we've created the database, enter the command:  
+```
 SHOW DATABASES
-```  
+```
+You should see the following output:  
+```
+name: databases
+name
+----
+_internal
+energy
+```
 At this point, databases can only be accessed with the admin user. To create a dedicated user with R/W access limited to this database run the following command:  
 ```
 CREATE USER 'energyuser' WITH PASSWORD 'password'
