@@ -195,7 +195,7 @@ influx -username energyuser -password password
 ```
 
 **Grafana user credentials:**  
-URL: **10.106.02.144:3000**
+URL: **10.106.02.144:3000**  
 Username: **admin**  
 Password: **password**  
 
@@ -213,7 +213,7 @@ To insert a data point:
 ```
 INSERT (measurement),(tag_set) (field_value1),(field_value2) (timestamp)
 ```  
-*Note:* If no timestamp is given, InfluxDB Will assign the current time as the data point is entered in.  
+*Note: If no timestamp is given, InfluxDB Will assign the current time as the data point is entered in.*  
 
 To show different measurements inside the InfluxDB database:  
 ```
