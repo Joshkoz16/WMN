@@ -236,8 +236,6 @@ You should now see the following data in your database:
 Your dashboard setup window should now look like this if you entered the same data points in (*Note: you may have to click on the refresh icon in the upper right-hand corner*:  
 ![Dashboard setup](https://github.com/Joshkoz16/WMN/blob/main/energy%20database%20test.png)
 
-You can then click "Apply" in the upper right-hand corner to save this dashboard panel  
-
 ## All credentials, information, and commands used in first instance of data collection:  
 This first instance used the iPerf3 tool between Rasp02 and Rasp03. The script that ran the tool and collected the data was on Rasp03. The InfluxDB databases that stored the collected data were on Rasp03.
 
