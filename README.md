@@ -186,7 +186,7 @@ password = password
 ```
 * To add a new connection, click on the menu on the left-hand side of the screen and click "Connections" then "Add new connection"  
 * Scroll down and select "InfluxDB" and click on "Add new data source" in the upper right-hand corner  
-* Give your new database a name (in my case, "InfluxDB-1"). Enter the URL (http://localhost:8086), enable Basic auth and enter the InfluxDB username and password credentials (in my case, "admin" and "password"), as well as the database name (in my case, "energy") and the database's username and password (in my case, "admin" and "password")  
+* Give your new database a name (in this case, "InfluxDB-1"). Enter the URL (http://localhost:8086), enable Basic auth, and enter the InfluxDB username and password credentials (in this case, "admin" and "password"), as well as the database name (in this case, "energy") and the database's username and password (in this case, "admin" and "password")  
 * Set HTTP Method to "GET"  
 * Click "Save & test" and you should receive the output "datasource is working. 1 measurement found"  
 * Return to the left-hand menu and select "Dashboards", we can select "New" then "New dashboard" and choose our display method. Here, we will choose "New visualization" * * Select the name of the database that was just linked. Underneath the "Panel Title" box will be a collection of options for query "A"  
@@ -246,28 +246,16 @@ Password: **password**
 
 Inside the InfluxDB database, here are some of the commands that can be used:  
 
-To show all databases (must be authenticated in as admin):  
+The SHOW command can be used to display the following:  
 ```
-SHOW databases
-```  
-To show all users (must be authenticated in as admin):  
+CONTINUOUS, DATABASES, DIAGNOSTICS, FIELD, GRANTS, MEASUREMENT, MEASUREMENTS, QUERIES, RETENTION, SERIES, SHARD, SHARDS, STATS, SUBSCRIPTIONS, TAG, USERS
 ```
-SHOW users
-```   
 To insert a data point:  
 ```
 INSERT (measurement),(tag_set) (field_value1),(field_value2) (timestamp)
 ```  
 *Note: If no timestamp is given, InfluxDB Will assign the current time as the data point is entered in.*  
 
-To show different measurements inside the InfluxDB database:  
-```
-SHOW measurements
-```  
-To show different tag keys inside the InfluxDB database:  
-```
-SHOW tag keys
-```
 To select a database to use:  
 ```
 use <database name>
