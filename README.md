@@ -327,14 +327,14 @@ Now you can reenter the 'iperf3 -s' command to start the server on rasp2. You sh
 Server listening on 5201
 -----------------------------------------------------------
 ```
-***Follow these next steps if you a dedicated wmntest database has not yet been created***  
+***Follow these next 2 steps if you a dedicated wmntest database has not yet been created***  
 Open influx as admin:  
 ```
 influx -username admin -password password
 ```
 Create wmntest database:     
 ```
-create database rasp03wmntest
+create database rasp03wmn
 ```
 *Note: in this example, we use rasp03 as the client pi, but substitute your client pi name in for rasp3 as needed. Edit the script in lines 27 aand 28 to match your pi and database names as well.*  
 On rasp3, open a Terminal window and enter the command:
