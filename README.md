@@ -209,7 +209,7 @@ password = password
 1696866970652751866 102      500       motor1
 1696866987873066167 195      592       motor1
 ```
-You can enter these datapoints yourself with the following commands:  
+You can enter these datapoints yourself with the following commands (*Note: enter each line in one at a time:*)    
 ```
 INSERT power_info,sensor=motor1 power_in=145,power_out=568
 INSERT power_info,sensor=motor1 power_in=145,power_out=568
