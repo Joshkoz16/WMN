@@ -336,7 +336,7 @@ Create wmntest database:
 ```
 create database rasp03wmntest
 ```
-*Note: in this example, we use rasp03 as the client pi, but substitute your client pi name in for rasp03 as needed. Edit the script in lines 27 aand 28 to match your pi and database names as well.*  
+*Note: in this example, we use rasp03 as the client pi, but substitute your client pi name in for rasp3 as needed. Edit the script in lines 27 aand 28 to match your pi and database names as well.*  
 On rasp3, open a Terminal window and enter the command:
 ```
 ls
