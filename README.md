@@ -249,6 +249,8 @@ Your dashboard setup window should now look like this if you entered the same da
 
 Later on, we'll run a test for real-time data collection. For that test, we'll need another dashboard configured for the new database we'll set up. For that, simplt repeat the steps shown here, but with a different database name (and different credentials IF you alter from the default "admin" and "password").  
 
+Grafana is a powerful visualization tool and there is too much detail to describe, but feel free to play around in the dashboard panel configurations to customize how you want your data displayed.  
+
 ## All credentials, information, and commands used in first instance of data collection:  
 This first instance used the iPerf3 tool between Rasp02 and Rasp03. The script that ran the tool and collected the data was on Rasp03. The InfluxDB databases that stored the collected data were on Rasp03.
 
@@ -371,4 +373,4 @@ Accepted connection from 10.106.92.91, port 34488
 
 ```
 Open up the Grafana dashboard you set up previously and if you have the graph properly set up you should see data being recorded in live time like this:  
-![Dashboard setup](https://github.com/Joshkoz16/WMN/blob/main/iperf3%20ping%20updating%20example.png)
+![Dashboard setup](https://github.com/Joshkoz16/WMN/blob/main/iperf3%20ping%20updating%20example.png)  
